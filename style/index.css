@@ -223,6 +223,10 @@ a {
     color:bisque;
     text-align:center;
 }
+.about:hover {
+    background-color:bisque;
+    color:#3e424b;
+}
 
 
 /*footer styles*/
@@ -252,3 +256,77 @@ a {
     padding: 0;
 }
 
+/*responsive styles*/
+/*responsive styles*/
+@media(max-width:800px){
+    /*top section*/
+    .title{
+        border-radius:0;
+    }
+    /*footer*/
+    .footer{
+        border-radius:0;
+    }
+}
+
+@media(max-width: 500px){
+   /*top section*/
+    .title{
+        /*background-image:none;
+        background-color:#9e708b;*/
+        text-align:center;
+        border-radius:0;
+    }
+    .main{
+        flex-direction:column;
+    }
+    .links{
+        width:60%;
+        flex-direction:column;
+        align-items:center;
+        margin:2%;
+    }
+    /*empty section*/
+    .Hero-Img{
+        background-position: center;
+        height:30vh;
+    }
+    
+    /*projects*/
+    .container{
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-items:center;
+    }
+    .project1{
+        width:100%;
+        border-radius:0;
+        background-position:center;
+    }
+    .project2{
+        width:100%;
+        border-radius:0;
+    }
+    .project3{
+        width:100%;
+        border-radius:0;
+        background-position:right;
+    }
+    .project4{
+        width:100%;
+        border-radius:0;
+        background-position:center;
+    }
+    .about{
+        width:100%;
+        border-radius:0;
+        margin:0;
+        padding:0;
+    }
+    /*footer*/
+    .footer{
+        border-radius:0;
+        margin:0;
+        padding:0;
+    }
+}
